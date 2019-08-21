@@ -1,5 +1,6 @@
 # parsivel2
 A MATLAB toolbox for reading, plotting and manipulating OTT Parsivel2 disdrometer 'raw' data.
+[![DOI](https://zenodo.org/badge/203242951.svg)](https://zenodo.org/badge/latestdoi/203242951)
 
 ## Overview
 The OTT Parsivel2 is a laser-optical disdrometer that measures the size and velocity of
