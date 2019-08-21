@@ -141,3 +141,7 @@ plotmeanDSD(parsivel.D,parsivel.N_d)
 xlabel('Diameter [mm]')
 ylabel('Drop concentration [log(m^{-3} mm^{-1})]')
 ```
+
+### Cite as:
+Jairo M. Valdvia. (2019, August 21). JValdivia23/parsivel2: Parsivel2 v1.0 Beta version (Version v1.0-beta). Zenodo. http://doi.org/10.5281/zenodo.3373987
+
