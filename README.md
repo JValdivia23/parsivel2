@@ -19,7 +19,7 @@ and raw data of sizes versus velocity (1).
 **cat_PSVstruct** - The following function is useful for combining the information of several files into a single structure.
 The function uses input an array of data structures and assembles it into one.
 
-**timecutPSVsctturct** - The following script is for cutting structures that have more 
+**timecutPSVstruct** - The following script is for cutting structures that have more 
 data than desired. The function uses input a data structure and the start and end times 
 that interest and throws a new structure with the indicated period.
 
