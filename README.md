@@ -56,7 +56,7 @@ The function uses the diameter vector and the drop concentration matrix to graph
 
 ## Examples
 
-**1** - Reading the file *00PARSIVEL_20180807222500.txt*, that is on the folder *\PARSIVEL2\\*:
+**1** - Reading the file *00PARSIVEL_20180807222500.txt*, that is in the folder *\PARSIVEL2\\*:
 ```Matlab
 filename='.\PARSIVEL2\00PARSIVEL_20180807222500.txt';
 data=get_parsivel2(filename)

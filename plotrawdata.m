@@ -10,8 +10,11 @@ function plotrawdata(D,vel,raw)
 % raw = raw/max(raw(:)) * 100; % normalized to max value
 dD=[ones(1,10)*0.125, ones(1,5)*0.25, ones(1,5)*0.5, ones(1,5), ones(1,5)*2, ones(1,2)*3];
 pcolor(D-dD/2,vel-0.05,log10(sum(raw,3)))
-% axis xy
-colormap(boonlib('airmap',64))
+
+try
+    colormap(boonlib('airmap',64))
+catch
+end
 xlim([0 8])
 ylim([0 15.15]) %
 caxis([0 3])
