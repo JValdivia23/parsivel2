@@ -120,7 +120,7 @@ parsivel =
           vel: [32x1 double]
 ```
 
-**3** - Plot the raw data of the Parsivel2:
+**4** - Plot the raw data of the Parsivel2:
 ```Matlab
 plotrawdata(parsivel.D, parsivel.vel, parsivel.raw)
 xlabel('Diameter [mm]')
@@ -128,13 +128,13 @@ ylabel('Velocity [m s^{-1}]')
 title('Numero de gotas [log(N)]')
 ```
 
-**4** - Plot the drop size distribution versus time using the Parsivel2 structure:
+**5** - Plot the drop size distribution versus time using the Parsivel2 structure:
 ```Matlab
 plotDSDbytime(parsivel.time,parsivel.D,parsivel.N_d)
 xlabel('Tiempo [UTC-5]')
 ```
 
-**5** - Plot the mean drop size distribution from the structure:
+**6** - Plot the mean drop size distribution from the structure:
 
 ```Matlab
 plotmeanDSD(parsivel.D,parsivel.N_d)
@@ -143,5 +143,4 @@ ylabel('Drop concentration [log(m^{-3} mm^{-1})]')
 ```
 
 ### Cite as:
-Jairo M. Valdvia. (2019, August 21). JValdivia23/parsivel2: Parsivel2 v1.0 Beta version (Version v1.0-beta). Zenodo. http://doi.org/10.5281/zenodo.3373987
-
+Jairo M. Valdvia. (2019, October 3). JValdivia23/parsivel2: OTT Parsivel2 toolbox (Version v1.1). Zenodo. http://doi.org/10.5281/zenodo.3471885
