@@ -18,7 +18,7 @@ end
 xlim([0 8])
 ylim([0 15.15]) %
 caxis([0 3])
-colorbar;
+%colorbar;
 shading flat
 % h.Ruler.Scale='log';
 % h.Ruler.MinorTick='on';

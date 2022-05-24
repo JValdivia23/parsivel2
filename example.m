@@ -48,9 +48,29 @@ figure(1)
 plotrawdata(parsivel.D,parsivel.vel,parsivel.raw)
 xlabel('Diameter [mm]')
 ylabel('Velocity [m s^{-1}]')
-title('Numero de gotas [log(N)]')
+title('Drops number (log_{10})')%'Numero de gotas [log(N)]')
+set(gcf,'color','w')
+% export_fig('C:\Users\usuario\OneDrive\Papers\Datainbrief1\DvsV','-dpng','-r300')
+%%
 plotDSDbytime(parsivel.time,parsivel.D,parsivel.N_d)
 xlabel('Tiempo [UTC-5]')
 plotmeanDSD(parsivel.D,parsivel.N_d)
 xlabel('Diameter [mm]')
 ylabel('Drop concentration [log(m^{-3} mm^{-1})]')
+
+%%
+ruta1='C:\Users\falle\2021082314\';
+files1=dir([ruta1,'*.txt']);
+% files1([files1.bytes]~=5209)=[];
+for ii = 1:length(files1)
+    filename=[ruta1,files1(ii).name];
+    psv2a(ii)=get_parsivel2(filename);
+end
+
+PSV2a=catPSVstruct(psv2a);
+%%
+figure(1)
+plotrawdata(PSV2a.D,PSV2a.vel,PSV2a.raw)
+%%
+figure(2)
+plotDSDbytime(PSV2a.time,PSV2a.D,PSV2a.N_d)

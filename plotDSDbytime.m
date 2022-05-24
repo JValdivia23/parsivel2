@@ -21,7 +21,8 @@ set(gca,'ytick',0:2:8)
 
 % f1.CurrentAxes.FontSize=11;
 % f1.CurrentAxes.LineWidth=1.5;
-hold on, plot(datetime(datevec(time)),time*NaN), hold off
+% hold on, plot(datetime(datevec(time)),time*NaN), hold off
+datetick('x', 'HH:MM');  %,  'keepticks'
 xlim([time(1) time(end)])
 % xt=f1.CurrentAxes.XTick;
 % f1.CurrentAxes.XTick=xt;
